@@ -1,17 +1,18 @@
 "use client";
-import { CHButtonProps } from "@/types";
+import { ZCButtonProps } from "@/types";
 import Image from "next/image";
 // import React from "react";
 // TODO: add Liskov Substitution Principle
-const CustomButton = ({
+const ZCButton = ({
   title,
   containerStyle,
   handleClick,
-}: CHButtonProps) => {
+  btnType,
+}: ZCButtonProps) => {
   return (
     <button
       disabled={false}
-      type="button"
+      type={btnType}
       className={`custom-btn ${containerStyle}`}
       onClick={handleClick}
     >
@@ -20,4 +21,4 @@ const CustomButton = ({
   );
 };
 
-export default CustomButton;
+export default ZCButton;

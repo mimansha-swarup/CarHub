@@ -1,7 +1,8 @@
 import { MouseEventHandler } from "react";
 
-export interface CHButtonProps {
+export interface ZCButtonProps {
   title: string;
   containerStyle: string;
-  handleClick: MouseEventHandler<HTMLButtonElement>;
+  btnType?: "button" | "submit";
+  handleClick?: MouseEventHandler<HTMLButtonElement>;
 }

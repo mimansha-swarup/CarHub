@@ -1,6 +1,6 @@
 "use client";
 import React from "react";
-import CustomButton from "./CustomButton";
+import ZCButton from "./ZCButton";
 import Image from "next/image";
 
 const Hero = () => {
@@ -17,7 +17,7 @@ const Hero = () => {
           process.
         </p>
 
-        <CustomButton
+        <ZCButton
           title={"Explore cars"}
           containerStyle={"bg-primary-blue text-white rounded-full mt-10"}
           handleClick={handleScroll}
