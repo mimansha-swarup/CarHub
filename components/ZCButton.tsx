@@ -8,6 +8,8 @@ const ZCButton = ({
   containerStyle,
   handleClick,
   btnType,
+  textStyle,
+  rightIcon,
 }: ZCButtonProps) => {
   return (
     <button
@@ -16,7 +18,17 @@ const ZCButton = ({
       className={`custom-btn ${containerStyle}`}
       onClick={handleClick}
     >
-      <span className={`flex-1`}>{title}</span>
+      <span className={`flex-1 ${textStyle}`}>{title}</span>
+      {rightIcon && (
+        <div className="relative w-6 h-6">
+          <Image
+            src={rightIcon}
+            alt="righTicon"
+            fill
+            className="object-contain"
+          />
+        </div>
+      )}
     </button>
   );
 };
